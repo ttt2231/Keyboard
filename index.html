@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar">
+                    <!-- nav-mobile -->
+
+                    <label for="nav-mobile-input" class="nav__bar-btn" >
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <!-- <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="fa-solid fa-magnifying-glass header__mobile-search-icon"></i>
+                    </label>
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox"> -->
+
+
+                    <input type="checkbox" hidden id="nav-mobile-input" class="nav__input">
+
+                    <label for="nav-mobile-input" class="nav__overlay"></label>
+                    
+                    
+                    <div class="nav__mobile">
+                        <!-- <label for="nav-mobile-input" class="nav__mobile-close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label> -->
+
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-link-wrap">
+                                <a href="" class="nav__mobile-link nav__mobile-link-is-active">Trang chủ</a>
+                            </li>
+                            <li class="nav__mobile-link-wrap nav__mobile-link-wrap-has-focus ">
+                                <a href="#" class="nav__mobile-link">Keycap bộ
+                                <i class="fa-solid fa-angle-down nav__mobile-link-wrap-icon"></i></a>
+                                <ul class="nav__mobile-sub-list">
+                                    <li class="nav__mobile-sub-link-wrap">
+                                        <a href="" class="nav__mobile-sub-link">Keycap Cherry</a>
+                                    </li>
+                                    <li class="nav__mobile-sub-link-wrap">
+                                        <a href="" class="nav__mobile-sub-link">Keycap SA</a>
+                                    </li>
+                                    <li class="nav__mobile-sub-link-wrap">
+                                        <a href="" class="nav__mobile-sub-link">Keycap XDA</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__mobile-link-wrap">
+                                <a href="" class="nav__mobile-link">Mods phím</a>
+                            </li>
+                            <li class="nav__mobile-link-wrap">
+                                <a href="" class="nav__mobile-link">Keycap lẻ</a>
+                            </li>
+                            <li class="nav__mobile-link-wrap">
+                                <a href="" class="nav__mobile-link">Combo chất</a>
+                            </li>
+                            <li class="nav__mobile-link-wrap">
+                                <a href="" class="nav__mobile-link">Sản phẩm
+                                <i class="fa-solid fa-angle-down nav__mobile-link-wrap-icon"></i></a>
+                            </li>
+                            <li class="nav__mobile-link-wrap">
+                                <a href="" class="nav__mobile-link">Blog</a>
+                            </li>
+                            <li class="nav__mobile-link-wrap">
+                                <a href="" class="nav__mobile-link">Về chúng tôi
+                                <i class="fa-solid fa-angle-down nav__mobile-link-wrap-icon"></i></a>
+                            </li>
+                            <li class="nav__mobile-link-wrap">
+                                <a href="" class="nav__mobile-link">Đăng nhập</a>
+                            </li>
+                            <li class="nav__mobile-link-wrap">
+                                <a href="" class="nav__mobile-link">Đăng ký</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    
+
+                    <ul class="header__navbar-list hide-on-mobile-tablet">
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-label--no-pointer">HOTLINE TƯ VẤN:</span>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="tel:0886812324" class="header__navbar-item-link">0886812324</a>
+                        </li>
+                    </ul>
+                    
+                    <a href="/" class="header__navbar-logo" title="Kicap">
+                        <img src="./assets/img/logo-bg/logo.png" alt="Kicap logo" class="header__navbar-logo--pic">
+                    </a>
+                    
+                    <!-- icon search mobile -->
+                    <label for="nav-inp-mobile-search" class="header__search-mobile">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+
+                    <section>
+                        <input type="checkbox" hidden id="nav-inp-mobile-search" class="inp__mobile-search">
+                        
+                        <label for="nav-inp-mobile-search" class="nav__overlay-sec"></label >
+                        
+                        <nav class="nav__mobile_search">
+                            <ul class="nav__mobile_search-list">
+                                <li class="nav__mobile_search-link">
+                                    <input type="text" class="nav__mobile_search-inp" placeholder="Bạn cần tìm gì hôm nay ?">
+                                    <i class="fa-solid fa-magnifying-glass nav__mobile_search-icon"></i>
+                                    
+                                </li>
+                            </ul>
+                            <label for="nav-inp-mobile-search">
+                                <i class="fa-solid fa-xmark nav__mobile_search-list-icon-tiems"></i>
+                            </label>
+                        </nav>
+
+                    </section>
+
+
+
+                    <ul class="header__navbar-list ">
+                        <li class="header__navbar-item header__navbar-item--has-login header__navbar-item--space header__navbar-item--separate hide-on-mobile-tablet">
+                            TÀI KHOẢN
+                            <!-- has hover login -->
+                            <div class="header__navbar-list--login-wrap">
+                                <div class="header__navbar-list--login">
+                                    <a href="" class="header__navbar-list--login-sign">ĐĂNG NHẬP</a>
+                                    <a href="" class="header__navbar-list--login-sign">ĐĂNG KÝ</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- <li class="header__navbar-item">
+                        </li> -->
+                        
+                        
+                        
+
+
+                        <li class="header__navbar-item header__navbar-item-has-hold-cart header__navbar-item--space ">
+                            <a href="/" class="header__navbar-icon-link ">
+                                <span class="hide-on-mobile-tablet">GIỎ HÀNG</span>
+                                <i class="header__navbar-icon fa-solid fa-cart-shopping"></i>
+                                <span class="header__navbar-icon-notice">3</span>
+                            </a>
+                            <!-- gio hang -->
+
+                            <div class="header__navbar-cart header__navbar-cart--no-pointer">
+                                <div class="header__navbar-cart-container">
+                                    <div class="header__navbar-cart-item">
+                                        <a href="/" class="header__navbar-cart-item-first">
+                                            <img src="./assets/img/Kit/Akko PC75B Plus.jpg" alt="" class="header__navbar-cart-item-img">
+                                        </a>
+
+                                        <div class="header__navbar-cart-item-mid">
+                                            <div class="header__navbar-cart-item-mid-header">
+                                                <a href="/" class="header__navbar-cart-item-label">Bàn phím Akko PC75B Plus</a>
+                                                <i class="fa-solid fa-xmark header__navbar-cart-item-icon"></i>
+
+                                            </div>
+                                            <div class="header__navbar-cart-item-mid-body">
+                                                <span class="header__navbar-cart-item-price">2,799,000 đ</span>
+                                                <div class="header__navbar-cart-item-count">
+                                                    <a href="/" class="header__navbar-cart-item-count-minus">-</a>
+                                                    <div class="header__navbar-cart-item-count-number">1</div>
+                                                    <a href="/" class="header__navbar-cart-item-count-plus">+</a>
+                                                </div>
+                                            </div>                                   
+                                        </div>
+                                    </div>   
+                                    <div class="header__navbar-cart-item">
+                                        <a href="/" class="header__navbar-cart-item-first">
+                                            <img src="./assets/img/keyboard 1.jpg" alt="" class="header__navbar-cart-item-img">
+                                        </a>
+
+                                        <div class="header__navbar-cart-item-mid">
+                                            <div class="header__navbar-cart-item-mid-header">
+                                                <a href="/" class="header__navbar-cart-item-label">Bộ keycap MG Alpenglow</a>
+                                                <i class="fa-solid fa-xmark header__navbar-cart-item-icon"></i>
+
+                                            </div>
+                                            <div class="header__navbar-cart-item-mid-body">
+                                                <span class="header__navbar-cart-item-price">750.000đ</span>
+                                                <div class="header__navbar-cart-item-count">
+                                                    <a href="/" class="header__navbar-cart-item-count-minus">-</a>
+                                                    <div class="header__navbar-cart-item-count-number">1</div>
+                                                    <a href="/" class="header__navbar-cart-item-count-plus">+</a>
+                                                </div>
+                                            </div>                                   
+                                        </div>
+                                    </div>
+                                    <div class="header__navbar-cart-item">
+                                        <a href="/" class="header__navbar-cart-item-first">
+                                            <img src="./assets/img/Kit/RAMA WORKS.png" alt="" class="header__navbar-cart-item-img">
+                                        </a>
+
+                                        <div class="header__navbar-cart-item-mid">
+                                            <div class="header__navbar-cart-item-mid-header">
+                                                <a href="/" class="header__navbar-cart-item-label">Bộ keycap RAMA WORKS</a>
+                                                <i class="fa-solid fa-xmark header__navbar-cart-item-icon"></i>
+
+                                            </div>
+                                            <div class="header__navbar-cart-item-mid-body">
+                                                <span class="header__navbar-cart-item-price">3.250.000đ</span>
+                                                <div class="header__navbar-cart-item-count">
+                                                    <a href="/" class="header__navbar-cart-item-count-minus">-</a>
+                                                    <div class="header__navbar-cart-item-count-number">1</div>
+                                                    <a href="/" class="header__navbar-cart-item-count-plus">+</a>
+                                                </div>
+                                            </div>                                   
+                                        </div>
+                                    </div>                 
+                                </div>
+                                <div class="header__navbar-cart-footer">
+                                    <div class="header__navbar-cart-footer-first">
+                                        <span class="header__navbar-cart-footer-label">Tổng cộng: </span>
+                                        <span class="header__navbar-cart-footer-price">2.240.000 đ</span>
+                                    </div>
+                                    <div class="header__navbar-cart-footer-end">
+                                        <button class="header__navbar-cart-footer-end-item">
+                                            <a href="" class="header__navbar-cart-footer-end-item-link">THANH TOÁN</a>                                        
+                                        </button>
+                                        <button class="header__navbar-cart-footer-end-item">
+                                            <a href="" class="header__navbar-cart-footer-end-item-link">XEM GIỎ HÀNG</a>                                            
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            
+
+                <!-- search -->
+                <div class="header__search">
+                    <div class="header__search-input-wrap">
+                        <input type="text" name="" id="" class="header__search-text" placeholder="Nhập sản phẩm muốn tìm kiếm">
+
+                        <!-- lịch sử tìm kiếm -->
+                        <div class="header__search-history">
+                            <h3 class="header__search-history-heading">Lịch sử tiềm kiếm</h3>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="" class="header__search-history-item-link">Kit MK870</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="" class="header__search-history-item-link">Kit Keychoon Q3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search-wrap-icon hide-on-mobile">
+                        <i class="fa-solid fa-magnifying-glass header__search-icon"></i>
+                    </div>
+                </div>
+
+                <!-- top nav -->
+                <nav class="header__navbar-top-nav hide-on-mobile-tablet">
+                    <ul class="header__navbar-top-nav-list">
+                        <li class="header__navbar-top-nav-item">
+                            <a href="" class="header__navbar-top-nav-item-link">TRANG CHỦ</a>
+                        </li>
+                        <li class="header__navbar-top-nav-item header__navbar-top-nav-item-has-set-keycap">
+                            <a href="" class="header__navbar-top-nav-item-link">
+                                KEYCAP BỘ
+                                <i class="fa-solid fa-angle-down header__navbar-top-nav-item-icon "></i>
+                            </a>
+                            <div class="header__navbar-top-nav-item-type-keycap-wrap">
+                                <div class="header__navbar-top-nav-item-type-keycap">
+                                    <ul class="header__navbar-top-nav-item-type-keycap-list">
+                                        <li class="header__navbar-top-nav-item-type-keycap-link">
+                                            <a href="" class="header__navbar-top-nav-item-type-keycap-link-sub">Keycap Cherry</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="header__navbar-top-nav-item-type-keycap-list">
+                                        <li class="header__navbar-top-nav-item-info-link">
+                                            <a href="" class="header__navbar-top-nav-item-type-keycap-link-sub">Keycap SA</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="header__navbar-top-nav-item-type-keycap-list">
+                                        <li class="header__navbar-top-nav-item-info-link">
+                                            <a href="" class="header__navbar-top-nav-item-type-keycap-link-sub">Keycap XDA</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                           
+                        </li>
+                        <li class="header__navbar-top-nav-item">
+                            <a href="" class="header__navbar-top-nav-item-link">MODS PHÍM</a>
+                        </li>
+                        <li class="header__navbar-top-nav-item">
+                            <a href="" class="header__navbar-top-nav-item-link">KEYCAP LẺ</a>
+                        </li>
+                        <li class="header__navbar-top-nav-item">
+                            <a href="" class="header__navbar-top-nav-item-link">COMBO CHẤT</a>
+                        </li>
+                        <li class="header__navbar-top-nav-item header__navbar-top-nav-item-has-hold-product">
+                            <a href="" class="header__navbar-top-nav-item-link">
+                                SẢN PHẨM
+                                <i class="fa-solid fa-angle-down header__navbar-top-nav-item-icon "></i>
+                            </a>
+                            <div class="header__navbar-top-nav-product">
+                                <ul class="header__navbar-top-nav-product-list">
+                                    <li class="header__navbar-top-nav-product-link">
+                                        <a href="" class="header__navbar-top-nav-product-label">KEYCAP BỘ</a>
+                                        <ul class="header__navbar-top-nav-product-sub-list">
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">Jamon ABS</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">SA PBT Chalk</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">SA Aifei Monster</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__navbar-top-nav-product-link">
+                                        <a href="" class="header__navbar-top-nav-product-label">KEYCAP LẺ</a>
+                                        <ul class="header__navbar-top-nav-product-sub-list">
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">PIKACHU ALU</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">CARD VGA</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">CỜ ĐẢNG BÚA LIỀM</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__navbar-top-nav-product-link">
+                                        <a href="" class="header__navbar-top-nav-product-label">CUSTOM CABLE</a>
+                                        <ul class="header__navbar-top-nav-product-sub-list">
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">Cable paracord color</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">Cable shadow color basic</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container"></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="header__navbar-top-nav-product-list">
+                                    <li class="header__navbar-top-nav-product-link">
+                                        <a href="" class="header__navbar-top-nav-product-label">KIT</a>
+                                        <ul class="header__navbar-top-nav-product-sub-list">
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">KIT NJ80</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">MK870 3 mode</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">Akko MOD007</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__navbar-top-nav-product-link">
+                                        <a href="" class="header__navbar-top-nav-product-label">SWITCH</a>
+                                        <ul class="header__navbar-top-nav-product-sub-list">
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">Gateron Pro Milky Yellow</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">Fantasy Virus</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">Kailh Box White</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__navbar-top-nav-product-link">
+                                        <a href="" class="header__navbar-top-nav-product-label">PHỤ KIỆN</a>
+                                        <ul class="header__navbar-top-nav-product-sub-list">
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">Núm xoay NJ80</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">Dụng cụ thay keycap</a>
+                                            </li>
+                                            <li class="header__navbar-top-nav-product-sub-list-item">
+                                                <a href="" class="header__navbar-top-nav-product-container">Chổi quét phím</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navbar-top-nav-item">
+                            <a href="" class="header__navbar-top-nav-item-link">BLOG</a>
+                        </li>
+                        <li class="header__navbar-top-nav-item header__navbar-top-nav-item-has-info">
+                            <a href="" class="header__navbar-top-nav-item-link">
+                                VỀ KICAP
+                                <i class="fa-solid fa-angle-down header__navbar-top-nav-item-icon "></i>
+                            </a>
+                            <div class="header__navbar-top-nav-item-info-wrap">
+                                <div class="header__navbar-top-nav-item-info">
+                                    <ul class="header__navbar-top-nav-item-info-list">
+                                        <li class="header__navbar-top-nav-item-info-link">
+                                            <a href="" class="header__navbar-top-nav-item-info-link-sub">Giới thiệu</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="header__navbar-top-nav-item-info-list">
+                                        <li class="header__navbar-top-nav-item-info-link">
+                                            <a href="" class="header__navbar-top-nav-item-info-link-sub">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid wide">
+                <div class="app__content row sm-gutter">
+                    <div class="container-slide-show row">
+                        <a href="" class="container-slide-show-link">
+                            <img src="./assets/img/keyboard 2.jpg" alt="" class="container-slide-show-myslide">                      
+                        </a>
+    
+    
+                        <!-- <div class="container-slide-show-move">
+                            <a href="" class="container-slide-show-move-link">
+                                <i class="fa-solid fa-angle-left container-slide-show-move-icon"></i>
+                            </a>
+                            <a href="" class="container-slide-show-move-link">
+                                <i class="fa-solid fa-angle-right container-slide-show-move-icon"></i>
+                            </a>
+                        </div> -->
+                        
+                    </div>
+                    
+                    <!-- SP 1-->
+                    <div class="container__product row">
+                        <ul class="container__product-header row">
+                            <a href="#" class="container__product-header-label">SẢN PHẨM MỚI</a>
+                        </ul>
+                        <ul class="container__product-body row sm-gutter">
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Kit/Akko ACR Pro Alice Plus.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Kit/Akko ACR Pro Alice Plus 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BÀN PHÍM CƠ AKKO ACR PRO ALICE PLUS</span>
+                                        <span class="container__product-body-item-link-content-price">2.899.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Kit/Akko 3098B.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Kit/Akko 3098B 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BÀN PHÍM CƠ AKKO 3098B MULTI-MODES</span>
+                                        <span class="container__product-body-item-link-content-price">2.199.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Kit/FL-Esports CMK98 Sam Metal Heart.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Kit/FL-Esports CMK98 Sam Metal Heart 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">Bàn phím FL Esport CMK98 SAM Metal Heart</span>
+                                        <span class="container__product-body-item-link-content-price">3.890.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Kit/Kit Ajazz AC067.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Kit/Kit Ajazz AC067 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">KIT BÀN PHÍM CƠ AJAZZ AC067</span>
+                                        <span class="container__product-body-item-link-content-price">3.450.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>                  
+                        </ul>
+                        <ul class="container__product-footer row">
+                            <a href="/" class="container__product-footer-link">
+                                <button class="container__product-footer-btn slide-right">XEM TẤT CẢ SẢN PHẨM</button>
+                            </a>                   
+                        </ul>
+                    </div>
+    
+                    <!-- SP 2 -->
+                    <div class="container__product row">
+                        <ul class="container__product-header row">
+                            <a href="/" class="container__product-header-label">SẢN PHẨM BÁN CHẠY NHẤT</a>
+                        </ul>
+                        <ul class="container__product-body row sm-gutter">
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Kit/Akko MOD001 World-Tour Tokyo.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Kit/Akko MOD001 World-Tour Tokyo 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BÀN PHÍM CƠ AKKO MOD001 WORLD-TOUR TOKYO</span>
+                                        <span class="container__product-body-item-link-content-price">4.050.000đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Kit/FL-Esports FL980 Sam Polar Night.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Kit/FL-Esports FL980 Sam Polar Night 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BÀN PHÍM CƠ FL-Esports FL980 Sam Polar Night</span>
+                                        <span class="container__product-body-item-link-content-price">3.150.000đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Kit/CherryB Neo87.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Kit/CherryB Neo87 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BÀN PHÍM CƠ CHERRYB NEO87</span>
+                                        <span class="container__product-body-item-link-content-price">6.990.000đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Kit/Tofu65 alu.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Kit/Tofu65 alu 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BÀN PHÍM CƠ TOFU65 ALUMINUM</span>
+                                        <span class="container__product-body-item-link-content-price">5.2   30.000đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>                  
+                        </ul>
+                        <ul class="container__product-footer row">
+                            <a href="/" class="container__product-footer-link">
+                                <button class="container__product-footer-btn slide-right">XEM TẤT CẢ SẢN PHẨM</button>
+                            </a>                   
+                        </ul>
+                    </div>
+    
+                    <!-- SP 3 -->
+                    <div class="container__product row">
+                        <ul class="container__product-header row">
+                            <a href="/" class="container__product-header-label">CÁC LOẠI SWITCH</a>
+                        </ul>
+                        <ul class="container__product-body row sm-gutter">
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/sw/AKKO CS Switch – Sakura.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/sw/AKKO CS Switch – Sakura 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">SWITCH</span>
+                                        <span class="container__product-body-item-link-content-label">AKKO CS SWITCH – SAKURA (45 SWITCH)</span>
+                                        <span class="container__product-body-item-link-content-price">270.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/sw/AKKO CS Switch – Crystal.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/sw/AKKO CS Switch – Crystal 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">SWITCH</span>
+                                        <span class="container__product-body-item-link-content-label">AKKO CS Switch – Crystal (45 switch)</span>
+                                        <span class="container__product-body-item-link-content-price">329.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/sw/AKKO CS Switch – Jelly Purple.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/sw/AKKO CS Switch – Jelly Purple 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">SWITCH</span>
+                                        <span class="container__product-body-item-link-content-label">AKKO CS Switch – Jelly Purple (45 switch)</span>
+                                        <span class="container__product-body-item-link-content-price">1.230.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/sw/AKKO CS Switch – Silver.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/sw/AKKO CS Switch – Silver 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">SWITCH</span>
+                                        <span class="container__product-body-item-link-content-label">AKKO CS Switch – Silver (45 switch)</span>
+                                        <span class="container__product-body-item-link-content-price">1.230.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>                  
+                        </ul>
+                        <ul class="container__product-footer row">
+                            <a href="/" class="container__product-footer-link">
+                                <button class="container__product-footer-btn slide-right">XEM TẤT CẢ SẢN PHẨM</button>
+              
+                            </a>                   
+                        </ul>
+                    </div>
+    
+                    <!-- sp 4 -->
+                    <section class="container-mid-wrap grid wide">
+                        <div class="container-mid">                                        
+                            <div class="container-mid-content">
+                                <ul class="container-mid-content-header row">
+                                    <a href="/" class="container-mid-content-header-link">BỘ SƯU TẬP KEYCAP SA AIFEI</a>
+                                </ul>
+    
+                                <ul class="container-mid-content-body row">
+                                    <li class="container__product-body-item col l-4 m-6 c-6">
+                                        <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                            <img src="./assets/img/Keycap/AiFei shimmer green.jpg" alt="" class="container__product-body-item-link-img">
+            
+                                            <div class="container__product-body-item-sub col">
+                                                <img src="./assets/img/Keycap/AiFei shimmer green 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                            </div>
+                                            
+                                            <div class="container__product-body-item-link-content">
+                                                <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                                <span class="container__product-body-item-link-content-label">BỘ KEYCAP SA AIFEI SHIMMER GREEN</span>
+                                                <span class="container__product-body-item-link-content-price">930.000 đ</span>
+            
+                                                <div class="container__product-body-item-subbutton">
+                                                    <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                                </div>
+                                            </div>                               
+                                        </a>
+                                    </li>
+
+                                    <li class="container__product-body-item col l-4 m-6 c-6">
+                                        <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                            <img src="./assets/img/Keycap/Keycap SA Flamingo.jpg" alt="" class="container__product-body-item-link-img">
+            
+                                            <div class="container__product-body-item-sub col">
+                                                <img src="./assets/img/Keycap/Keycap SA Flamingo 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                            </div>
+                                            
+                                            <div class="container__product-body-item-link-content">
+                                                <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                                <span class="container__product-body-item-link-content-label">BỘ KEYCAP SA AIFEI FLAMINGO</span>
+                                                <span class="container__product-body-item-link-content-price">930.000 đ</span>
+            
+                                                <div class="container__product-body-item-subbutton">
+                                                    <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                                </div>
+                                            </div>                               
+                                        </a>
+                                    </li>                         
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <!-- sp 5 -->
+                    <div class="container__product row">
+                        <ul class="container__product-header row">
+                            <a href="/" class="container__product-header-label">CÁC SET KEYCAP</a>
+                        </ul>
+                        <ul class="container__product-body row sm-gutter">
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Keycap/AKKO Keycap set – Blue on White.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Keycap/AKKO Keycap set – Blue on White 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BỘ KEYCAP AKKO KEYCAP SET – BLUE ON WHITE</span>
+                                        <span class="container__product-body-item-link-content-price">999.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Keycap/AKKO Keycap set – Dracula Castle.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Keycap/AKKO Keycap set – Dracula Castle 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BỘ KEYCAP AKKO KEYCAP SET – DRACULA CASTLE</span>
+                                        <span class="container__product-body-item-link-content-price">999.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Keycap/AKKO Keycap set – Psittacus.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Keycap/AKKO Keycap set – Psittacus 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BỘ KEYCAP SA AKKO KEYCAP SET – PSITTACUS</span>
+                                        <span class="container__product-body-item-link-content-price">999.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Keycap/AKKO Keycap set – Very Peri.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Keycap/AKKO Keycap set – Very Peri 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BỘ KEYCAP SA AKKO KEYCAP SET – VERY PERI</span>
+                                        <span class="container__product-body-item-link-content-price">999.000 đ</span>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>                  
+                        </ul>
+                        <ul class="container__product-footer row">
+                            <a href="/" class="container__product-footer-link">
+                                <button class="container__product-footer-btn slide-right">XEM TẤT CẢ SẢN PHẨM</button>
+                            </a>                   
+                        </ul>
+                    </div>
+
+                    <!-- sp 6 -->
+                    <div class="container__product row">
+                        <ul class="container__product-header row">
+                            <a href="/" class="container__product-header-label">KHUYẾN MÃI THÁNG 8</a>
+                        </ul>
+                        <ul class="container__product-body row sm-gutter">
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Keycap/PBT Clone KeycapsA.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Keycap/PBT Clone KeycapsA 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BỘ KEYCAP PBT 1</span>
+                                        <div class="container__product-body-item-link-content-price-wrap">
+                                            <span class="container__product-body-item-link-content-price">3.230.000 đ</span>
+                                            <span class="container__product-body-item-link-content-price-old">4.000.000 đ</span>
+                                        </div>
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Keycap/PBT Clone KeycapsB.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Keycap/PBT Clone KeycapsB 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BỘ KEYCAP PBT 2</span>
+                                        <div class="container__product-body-item-link-content-price-wrap">
+                                            <span class="container__product-body-item-link-content-price">3.230.000 đ</span>
+                                            <span class="container__product-body-item-link-content-price-old">4.000.000 đ</span>
+                                        </div>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Keycap/PBT Clone KeycapsC.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Keycap/PBT Clone KeycapsC 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BỘ KEYCAP PBT 3</span>
+                                        <div class="container__product-body-item-link-content-price-wrap">
+                                            <span class="container__product-body-item-link-content-price">3.230.000 đ</span>
+                                            <span class="container__product-body-item-link-content-price-old">4.000.000 đ</span>
+                                        </div>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <img src="./assets/img/Keycap/PBT Clone KeycapsD.jpg" alt="" class="container__product-body-item-link-img">
+    
+                                    <div class="container__product-body-item-sub col">
+                                        <img src="./assets/img/Keycap/PBT Clone KeycapsD 1.jpg" alt="" class="container__product-body-item-sub-img">
+                                    </div>
+                                    
+                                    <div class="container__product-body-item-link-content">
+                                        <span class="container__product-body-item-link-content-title">KEYCAP BỘ</span>
+                                        <span class="container__product-body-item-link-content-label">BỘ KEYCAP PBT 4</span>
+                                        <div class="container__product-body-item-link-content-price-wrap">
+                                            <span class="container__product-body-item-link-content-price">3.230.000 đ</span>
+                                            <span class="container__product-body-item-link-content-price-old">4.000.000 đ</span>
+                                        </div>
+    
+                                        <div class="container__product-body-item-subbutton">
+                                            <button class="container__product-body-item-sub-btn">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>                               
+                                </a>
+                            </li>                  
+                        </ul>
+                        <ul class="container__product-footer row">
+                            <a href="/" class="container__product-footer-link">
+                                <button class="container__product-footer-btn slide-right">XEM TẤT CẢ SẢN PHẨM</button>
+                            </a>                   
+                        </ul>
+                    </div>
+    
+                    <!-- sp 7 -->
+                    <div class="container__product row grid wide">
+                        <ul class="container__product-header row">
+                            <a href="/" class="container__product-header-label">TIN TỨC KEYCAP</a>
+                        </ul>
+                        <ul class="container__product-body row sm-gutter">
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <div class="container__product-body-item-news-link-img-wrap-parent">
+                                        <div class="container__product-body-item-news-link-img-wrap">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/436/596/articles/1.jpg?v=1656563970007" alt="" class="container__product-body-item-news-link-img">  
+                                        </div>
+                                    </div>
+                                    <div class="container__product-body-item-link-news-content">
+                                        <span class="container__product-body-item-link-news-content-label">CASE SMOKE THÌ CHỌN KEYCAP GÌ???</span>
+                                        <span class="container__product-body-item-link-news-content-body">Chơi keycap là một phần không thể thiếu đối với những người chơi phím chúng ta. Và chọn keycap để hợp với màu case lại càng phải làm nhưng cũng rất nan giải và phân vân. Tại đây, Kicap muốn giới thiệu tới các bạn một vài ba bộ keycap mà Kicap cho rằng rất phù hợp với một màu case rất phổ biến hiện nay: màu Smoke.</span>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold"> 
+                                    <div class="container__product-body-item-news-link-img-wrap-parent">
+                                        <div class="container__product-body-item-news-link-img-wrap">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/436/596/articles/2-2c1a6d38-7e37-4a2e-aeab-d29c20dd8a31.jpg?v=1656563983220" alt="" class="container__product-body-item-news-link-img">  
+                                        </div>
+                                    </div>                                   
+                                    <div class="container__product-body-item-link-news-content">
+                                        <span class="container__product-body-item-link-news-content-label">SO SÁNH MK870 3 MODE VỚI NJ80AP - LIỆU CÓ QUÁ KHẬP KHIỄNG?</span>
+                                        <span class="container__product-body-item-link-news-content-body">Với hơn 2 triệu đồng trong tay, bạn có thể build được 1 bộ bàn phím cơ tương đối ổn từ kit MK870. Nhưng cũng cùng mức giá đó, bạn chỉ có thể mua được một bộ kit NJ80 mà thôi. Vậy tại sao lại có sự so sánh "mất cân đối" như này, hãy cùng Kicap tìm hiểu về 2 mẫu kit quốc dân này nhé.</span>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">  
+                                    <div class="container__product-body-item-news-link-img-wrap-parent">
+                                        <div class="container__product-body-item-news-link-img-wrap">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/436/596/articles/thiet-ke-chua-co-ten-5.jpg?v=1657507395517" alt="" class="container__product-body-item-news-link-img">  
+                                        </div>
+                                    </div>                               
+                                    <div class="container__product-body-item-link-news-content">
+                                        <span class="container__product-body-item-link-news-content-label">MOD PHÍM - PHẢI LÀM SAO PHẢI LÀM SAO?? - PHẦN 1</span>
+                                        <span class="container__product-body-item-link-news-content-body">Mod – hay đầy đủ gọi là modify, modification, là việc mình tùy chỉnh, thay đổi. Mod phím cũng vậy. Đó là việc người dùng, người chơi phím chúng ta tùy chỉnh, thay đổi bộ phận, thêm bớt linh kiện hay thậm chí thay đổi kết cấu để đạt được âm thanh và cảm giác gõ chúng ta mong muốn.</span>
+                                    </div>                               
+                                </a>
+                            </li>
+                            <li class="container__product-body-item col l-3 m-6 c-6">
+                                <a href="/" class="container__product-body-item-link container__product-body-item-link-has-hold">
+                                    <div class="container__product-body-item-news-link-img-wrap-parent">
+                                        <div class="container__product-body-item-news-link-img-wrap">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/436/596/articles/thiet-ke-chua-co-ten-6.jpg?v=1657595684727" alt="" class="container__product-body-item-news-link-img">  
+                                        </div>
+                                    </div>                            
+                                    <div class="container__product-body-item-link-news-content">
+                                        <span class="container__product-body-item-link-news-content-label">MOD PHÍM - PHẢI LÀM SAO PHẢI LÀM SAO?? - PHẦN 2</span>
+                                        <span class="container__product-body-item-link-news-content-body">Tiếp tục câu chuyện của phần 1, ở phần 2 sẽ có vài ba mod thêm cho anh em về nâng cấp em phím của mình:</span>
+                                    </div>                               
+                                </a>
+                            </li>                            
+                        </ul>
+                        <ul class="container__product-footer row">
+                            <a href="/" class="container__product-footer-link">
+                                <button class="container__product-footer-btn slide-right">XEM TẤT CẢ</button>
+                            </a>                   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide col">
+                <div class="row">
+                    <div class="col l-3 m-6 c-6">
+                        <h3 class="footer__heading">Dịch vụ khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Hướng dẫn thanh toán</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Hướng dẫn giao nhận</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">ĐIều khoản dịch vụ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-6">
+                        <h3 class="footer__heading">Chính sách khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Chính sách bảo mật</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Chính sách vận chuyển</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Chính sách đổI trả</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Quy định sử dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-6">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link footer__item-link-default">
+                                <i class="footer__item-icon fa-solid fa-location-dot"></i>
+                                Cuối ngách 31, ngõ 424 Thụy Khuê, Tây Hồ, Hà Nội</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="tel:0369161095" class="footer__item-link">
+                                <i class="footer__item-icon fa-solid fa-phone"></i>
+                                0369161095</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="mailto:hoangtri2231@gmail.com" class="footer__item-link">
+                                <i class="footer__item-icon fa-solid fa-envelope"></i>
+                                hoangtri2231@gmail.com</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="mailto:hoangtri22312231@gmail.com" class="footer__item-link">
+                                <i class="footer__item-icon fa-solid fa-envelope"></i>
+                                hoangtri22312231@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6  c-6">
+                        <h3 class="footer__heading">Đăng ký nhận tin</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <p class="footer__item-link footer__item-link-default">Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
+                            </li>
+                            <li class="footer__item">
+                                <input type="text" class="footer__item-input" placeholder="Email của bạn">
+                            </li>
+                            <li class="footer__item">
+                                <button class="footer__item-btn">Đăng ký</button>
+                            </li>
+                            <li class="footer__item">
+                                <ul class="footer__item-payment">
+                                    <li class="footer__item-payment-item">
+                                        <img src="https://bizweb.dktcdn.net/100/436/596/themes/834446/assets/payment_1.svg?1660391384363" alt="" class="footer__item-payment-item-img">
+                                    </li>
+                                    <li class="footer__item-payment-item">
+                                        <img src="https://bizweb.dktcdn.net/100/436/596/themes/834446/assets/payment_2.svg?1660391384363" alt="" class="footer__item-payment-item-img">
+                                    </li>
+                                    <li class="footer__item-payment-item">
+                                        <img src="https://bizweb.dktcdn.net/100/436/596/themes/834446/assets/payment_3.svg?1660391384363" alt="" class="footer__item-payment-item-img">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__text">© Copyright 2021 | Hoàng Trí | All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

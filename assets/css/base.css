@@ -1,0 +1,76 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --border-color: #e5e5e5;
+    --text-color: #1c1c1c;
+    --test-color: #ff0000;
+    --header-height: 63px;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__columm-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+#float {
+    position: relative;
+    -webkit-animation: floatBubble 2s   normal ease-out;
+    animation: floatBubble 2s   normal ease-out;
+}
+@-webkit-keyframes floatBubble {
+    0% {
+        top:500px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@keyframes floatBubble {
+    0% {
+        top:500px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes move-up{
+    from{
+        bottom: -30px;
+        opacity: 0;
+    }   
+    to{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
