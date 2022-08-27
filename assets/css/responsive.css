@@ -335,6 +335,9 @@
         display: block;
     }
 
+    .footer_padding{
+        padding: 0 16px;
+    }
     
 
 
