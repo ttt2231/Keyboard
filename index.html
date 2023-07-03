@@ -20,9 +20,9 @@
     <div class="app">
         <header class="header">
             <div class="grid wide">
+                <!-- navbar -->
                 <nav class="header__navbar">
                     <!-- nav-mobile -->
-
                     <label for="nav-mobile-input" class="nav__bar-btn" >
                         <i class="fa-solid fa-bars"></i>
                     </label>
@@ -34,7 +34,6 @@
 
 
                     <input type="checkbox" hidden id="nav-mobile-input" class="nav__input">
-
                     <label for="nav-mobile-input" class="nav__overlay"></label>
                     
                     
@@ -92,27 +91,24 @@
                     </div>
 
 
-                    
-
-                    <ul class="header__navbar-list hide-on-mobile-tablet">
+                    <ul class="header__navbar-list hide-on-mobile-tablet left__header">
                         <li class="header__navbar-item">
                             <span class="header__navbar-label--no-pointer">HOTLINE TƯ VẤN:</span>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="tel:0886812324" class="header__navbar-item-link">0886812324</a>
+                            <a href="tel:0886812324" class="header__navbar-item-link" style="font-weight: bold;">0886812324</a>
                         </li>
                     </ul>
                     
                     <a href="/" class="header__navbar-logo" title="Kicap">
-                        <img src="./assets/img/logo-bg/logo.png" alt="Kicap logo" class="header__navbar-logo--pic">
+                        <img src="./assets/img/logo-bg/logo.webp" alt="Kicap logo" class="header__navbar-logo--pic">
                     </a>
                     
                     <!-- icon search mobile -->
                     <label for="nav-inp-mobile-search" class="header__search-mobile">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </label>
-
-                    <section>
+                    <section class="section_mobile hide-on-tablet">
                         <input type="checkbox" hidden id="nav-inp-mobile-search" class="inp__mobile-search">
                         
                         <label for="nav-inp-mobile-search" class="nav__overlay-sec"></label >
@@ -129,12 +125,9 @@
                                 <i class="fa-solid fa-xmark nav__mobile_search-list-icon-tiems"></i>
                             </label>
                         </nav>
-
                     </section>
 
-
-
-                    <ul class="header__navbar-list ">
+                    <ul class="header__navbar-list right__header">
                         <li class="header__navbar-item header__navbar-item--has-login header__navbar-item--space header__navbar-item--separate hide-on-mobile-tablet">
                             TÀI KHOẢN
                             <!-- has hover login -->
@@ -147,10 +140,7 @@
                         </li>
 
                         <!-- <li class="header__navbar-item">
-                        </li> -->
-                        
-                        
-                        
+                        </li> -->                                       
 
 
                         <li class="header__navbar-item header__navbar-item-has-hold-cart header__navbar-item--space ">
@@ -159,8 +149,8 @@
                                 <i class="header__navbar-icon fa-solid fa-cart-shopping"></i>
                                 <span class="header__navbar-icon-notice">3</span>
                             </a>
-                            <!-- gio hang -->
 
+                            <!-- gio hang -->
                             <div class="header__navbar-cart header__navbar-cart--no-pointer">
                                 <div class="header__navbar-cart-container">
                                     <div class="header__navbar-cart-item">
@@ -246,7 +236,6 @@
                     </ul>
                 </nav>
             
-
                 <!-- search -->
                 <div class="header__search">
                     <div class="header__search-input-wrap">
@@ -274,7 +263,7 @@
                 <nav class="header__navbar-top-nav hide-on-mobile-tablet">
                     <ul class="header__navbar-top-nav-list">
                         <li class="header__navbar-top-nav-item">
-                            <a href="" class="header__navbar-top-nav-item-link">TRANG CHỦ</a>
+                            <a href="" class="header__navbar-top-nav-item-link" style="color: #c9d6df;">TRANG CHỦ</a>
                         </li>
                         <li class="header__navbar-top-nav-item header__navbar-top-nav-item-has-set-keycap">
                             <a href="" class="header__navbar-top-nav-item-link">
@@ -431,8 +420,6 @@
                         </li>
                     </ul>
                 </nav>
-
-                
             </div>
         </header>
 
@@ -440,9 +427,22 @@
             <div class="grid wide">
                 <div class="app__content row sm-gutter">
                     <div class="container-slide-show row">
-                        <a href="" class="container-slide-show-link">
-                            <img src="./assets/img/keyboard 2.jpg" alt="" class="container-slide-show-myslide">                      
-                        </a>
+
+
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                    <img id="slide-1" src="./assets/img/slide-1.png" alt="" class="container-slide-show-myslide">                                                     
+                                    <img id="slide-2" src="./assets/img/slide-2.png" alt="" class="container-slide-show-myslide">                                    
+                                    <img id="slide-3" src="./assets/img/slide-3.png" alt="" class="container-slide-show-myslide">                      
+                                    <img id="slide-4" src="./assets/img/slide-4.png" alt="" class="container-slide-show-myslide">                      
+                            </div>
+                            <div class="slider-nav">
+                                    <a href="#slide-1"></a>
+                                    <a href="#slide-2"></a>
+                                    <a href="#slide-3"></a>
+                                    <a href="#slide-4"></a>
+                            </div>
+                        </div>
     
     
                         <!-- <div class="container-slide-show-move">
